@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocando uma imagem pela outra em JS</title>
+</head>
+<body>
+    <h2>trocando a imagem com js através da função onclick</h2>
+
+    <button type="button" onclick="document.getElementById('demo').src='./assets/lampada-acesa.png'">Acender lampada</button>
+
+    <img id="demo" src="./assets/lampada-apagada.png" width="100px" alt="lampada">
+
+    <button type="button" onclick="document.getElementById('demo').src='./assets/lampada-apagada.png' ">Apagar Luz</button>
+
+    <div onmousemove="this.style.backgroundColor='red'">hello galera</div>
+</body>
+</html>
+
