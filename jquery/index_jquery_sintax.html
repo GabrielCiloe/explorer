@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    
+    .displayNone{
+        display: none;
+        transition: all 1s;
+    }
+    .displayBlock{
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<section id= "secao1"class="secao1 displayNone">
+        
+    <h2>Conteudo de uma Section</h2>
+    <p id="01">Hello World!</p>
+    <p id="02">Hello Sweden!</p>
+    <p id="03">Hello Japan!</p>
+    <a href="https://google.com">Google aqui</a>
+    <p id="demo"></p>
+
+</section>
+
+<button id="mostrarSection" >Mostrar Section</button>
+
+<button onclick="gabriel()">Mostrar template</button>
+
+<div id="div1"class="div1 displayNone">
+        
+    <h2>Conteudo de uma div</h2>
+    <p id="01">Hello World!</p>
+    <p id="02">Hello Sweden!</p>
+    <p id="03">Hello Japan!</p>
+    <a href="https://google.com">Google aqui</a>
+    <p id="demo"></p>
+
+</div>
+
+
+<div id="demo1">
+    
+</div>
+
+
+<button id="mostrarDiv">Mostrar Div</button>
+
+<button id="cardGrad">calcular</button>
+
+<script>
+
+    function gabriel(){
+        document.getElementById('demo1').innerHTML = `<input type:button>Botão vindo do template strings </input>`
+    }
+
+
+$("#mostrarSection").click(function(event){
+    var secao = $('#secao1');
+    var div = $('#div1');
+    $(secao).removeClass('displayNone');
+
+    $(div).addClass('displayNone');
+})
+
+$("#mostrarDiv").click(function(event){
+    var secao = $('#secao1');
+    var div = $('#div1');
+    $(secao).addClass('displayNone');
+
+    $(div).removeClass('displayNone');
+})
+
+$('#cardGrad').click(function(event){
+    var cardGrad = $('#cardGrad');
+    var cardPos = $('#cardPos');
+    var cardColegio = $('#cardColegio')
+    cardGrad = true;
+    cardPos = false;
+
+
+
+    if($cardPos == false){
+        $(this).addClass('displayNone');
+    } else ($cardPos == true){
+        $(this).removeClass('displayNone');
+    }
+
+    if($cardPos == false){
+        $(this).addClass('displayNone');
+    } else ($cardPos == true){
+        $(this).removeClass('displayNone');
+    }
+
+
+})
+
+
+$('#cardPos').click(function(event){
+    var cardGrad = $('#cardGrad');
+    var cardPos = $('#cardPos');
+    var cardColegio = $('#cardColegio')
+    cardGrad = false;
+    cardPos = true;
+
+
+
+    if($cardPos == false){
+        var menuPos = $('.menuGrad');
+        $(menuPos).addClass('displayNone');
+    } else {
+        var menuPos = $('.menuGrad');
+        $(menuPos).removeClass('displayNone');
+    }
+
+    if($cardPos == false){
+        $(this).addClass('displayNone');
+    } else {
+        $(this).removeClass('displayNone');
+    }
+
+
+})
+</script>
+
+</body>
+</html>
