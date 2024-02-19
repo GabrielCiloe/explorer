@@ -1,52 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suporte Comercial - UNASP</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main>
-        <section id="modalidades">
-            <div class="modalidades_content">
-                <div class="logo-unasp">
-                    <a href="https://unasp.br">
-                        <img src="./assets/logo-unasp.svg" alt="Logo do UNASP">
-                    </a>
-                </div>
-                <div class="hero">
-                    <h2>Baixe todas as <span>artes e materiais</span> promocionais do UNASP </h2>
-                </div>
-
-                <p class="escolha-modalidade">PARA COMEÇAR, ESCOLHA AQUI A SUA MODALIDADE</p>
-
-                <div class="botoes modalidades">
-                    <div>
-                        <button onclick= "graduacao()">GRADUAÇÃO</button>
-                        <button onclick= "posGraduacao()">PÓS-GRADUAÇÃO</button>
-                        <button onclick= "educacaoBasica()">EDUCAÇÃO BÁSICA</button>
-                    </div>
-                    <div>
-                        <button onclick= "mestrado()">MESTRADO</button>
-                        <button onclick= "cursosLivres()">CURSOS LIVRES</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div id="demo">
-            
-        </div>
-
-        <div id="demo2"></div>
-
-        <footer>
-            <p>© UNASP – Centro Universitário Adventista de São Paulo 2024 – Todos os direitos reservados.</p>
-        </footer>
-
-    </main>
+    <link
+      href="https://db.onlinewebfonts.com/c/f2206fc1f8680da7113bd2e00df931bf?family=MicrobrewTwo"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section id="modalidades">
+        <div class="modalidades_content">
+          <div class="logo-unasp">
+            <a href="https://unasp.br">
+              <img src="./assets/logo-unasp.svg" alt="Logo do UNASP" />
+            </a>
+          </div>
+          <div class="hero">
+            <h2>
+              Baixe todas as <span>artes e materiais</span> promocionais do
+              UNASP
+            </h2>
+          </div>
+
+          <p class="escolha-modalidade">
+            PARA COMEÇAR, ESCOLHA AQUI A SUA MODALIDADE
+          </p>
+
+          <div class="botoes modalidades">
+            <div>
+              <button onclick="graduacao()">GRADUAÇÃO</button>
+              <button onclick="posGraduacao()">PÓS-GRADUAÇÃO</button>
+              <button onclick="educacaoBasica()">EDUCAÇÃO BÁSICA</button>
+            </div>
+            <div>
+              <button onclick="mestrado()">MESTRADO</button>
+              <button onclick="cursosLivres()">CURSOS LIVRES</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="demo"></div>
+
+      <div id="demo2"></div>
+
+      <footer>
+        <p>
+          © UNASP – Centro Universitário Adventista de São Paulo
+          <span id="anoAtual"></span> – Todos os direitos reservados.
+        </p>
+      </footer>
+    </main>
+
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

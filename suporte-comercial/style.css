@@ -1,19 +1,18 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url(https://db.onlinewebfonts.com/c/f2206fc1f8680da7113bd2e00df931bf?family=MicrobrewTwo);
 
-*{
+* {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
 
-main{
+main {
     width: 100%;
     overflow: hidden;
 }
 
-footer{
+footer {
     background-color: #032950;
     color: #fff;
     font-family: 'Inter', sans-serif;
@@ -31,17 +30,17 @@ footer{
     border-radius: 4px;
 }
 
-#modalidades{
+#modalidades {
     background-color: #fff;
     margin: 0 auto;
     padding: 80px 0;
 }
 
-.modalidades_content{
+.modalidades_content {
     max-width: 71.25rem;
 }
 
-.logo-unasp{
+.logo-unasp {
     display: flex;
     padding: 20px 0;
     background-color: #003366;
@@ -49,7 +48,7 @@ footer{
     margin-bottom: 40px;
 }
 
-.hero{
+.hero {
     background-image: url(./assets/banner-hero.webp);
     background-size: cover;
     height: 470px;
@@ -60,7 +59,7 @@ footer{
     margin-bottom: 30px;
 }
 
-.hero>h2{
+.hero>h2 {
     font-family: "MicrobrewTwo";
     font-size: 52px;
     color: #fff;
@@ -69,12 +68,12 @@ footer{
     text-align: center;
 }
 
-.hero>h2>span{
+.hero>h2>span {
     text-decoration: underline #f05025;
 }
 
-.escolha-modalidade{
-    color:#003366;
+.escolha-modalidade {
+    color: #003366;
     font-family: 'Inter', sans-serif;
     text-align: center;
     font-weight: 700;
@@ -82,7 +81,7 @@ footer{
     margin-bottom: 30px;
 }
 
-.botoes{
+.botoes {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -90,12 +89,12 @@ footer{
     gap: 30px;
 }
 
-.botoes div{
+.botoes div {
     gap: 30px;
     display: flex;
 }
 
-.botoes button{
+.botoes button {
     border: 0;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
@@ -106,24 +105,24 @@ footer{
     box-shadow: 7px 7px #000;
 }
 
-.modalidades button{
+.modalidades button {
     background-color: #003366;
     color: #fff;
 
 }
 
-#demo{
+#demo {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
 }
 
-.wrapper{
+.wrapper {
     max-width: 71.25rem;
     margin: 0 auto;
 }
 
-.vestibularTitle{
+.vestibularTitle {
     font-family: 'Inter', sans-serif;
     font-size: 40px;
     text-decoration: underline #f05025;
@@ -131,7 +130,7 @@ footer{
     color: #fff;
 }
 
-.promocionaisTitle{
+.promocionaisTitle {
     color: #fff;
     font-family: 'Inter', sans-serif;
     font-size: 40px;
@@ -141,22 +140,22 @@ footer{
     margin-bottom: 50px;
 }
 
-.wrapper>p{
+.wrapper>p {
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 500;
     color: #fff;
-    margin-bottom: 40px ;
+    margin-bottom: 40px;
 }
 
-.campus{
+.campus {
     background-color: #003366;
     width: 100%;
     padding: 80px 0;
 }
 
-.logo-unasp-azul{
+.logo-unasp-azul {
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -166,24 +165,24 @@ footer{
     margin-bottom: 40px;
 }
 
-.cardCampus{
+.cardCampus {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
 }
 
-.cardCampus>.card{
+.cardCampus>.card {
     display: flex;
     flex-direction: column;
     gap: 20px;
     max-width: 265px;
 }
 
-.cardCampus>.card>img{
+.cardCampus>.card>img {
     width: 100%;
 }
 
-.buttonCard{
+.buttonCard {
     color: #212121;
     background-color: #fff;
     box-shadow: 7px 7px #000;
@@ -198,26 +197,26 @@ footer{
 
 /*Aqui comça o estilo do Campus da Educação Básica*/
 
-.cardCampusColegio{
+.cardCampusColegio {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     gap: 0px;
 }
 
-.cardCampusColegio>.card{
+.cardCampusColegio>.card {
     display: flex;
     flex-direction: column;
     gap: 20px;
     max-width: 360px;
-    
+
 }
 
-.cardCampusColegio>.card>img{
+.cardCampusColegio>.card>img {
     width: 100%;
 }
 
-.cardCampusColegio>.card>button{
+.cardCampusColegio>.card>button {
     color: #212121;
     background-color: #fff;
     box-shadow: 7px 7px #000;
@@ -230,11 +229,11 @@ footer{
     padding: 30px 0;
 }
 
-.slideWrapper{
+.slideWrapper {
     margin-bottom: 80px;
 }
 
-.slide{
+.slide {
     display: flex;
     background-color: #00000038;
     border-radius: 12px;
@@ -242,18 +241,18 @@ footer{
     gap: 30px;
 }
 
-.modelo-slide-1{
+.modelo-slide-1 {
     display: flex;
     flex-direction: column;
     justify-content: end;
     width: 50%;
 }
 
-.modelo-slide-1>img{
+.modelo-slide-1>img {
     width: 100%;
 }
 
-.modelo-slide-1-2{
+.modelo-slide-1-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -261,7 +260,7 @@ footer{
     width: 50%;
 }
 
-.modelo-slide-1-2>p{
+.modelo-slide-1-2>p {
     text-align: center;
     justify-content: center;
     align-self: center;
@@ -272,14 +271,14 @@ footer{
     width: 400px;
 }
 
-.orangeMarker{
+.orangeMarker {
     background-color: #f05025;
     padding: 3px;
     font-weight: 700;
-    
+
 }
 
-.slideBtn{
+.slideBtn {
     color: #212121;
     background-color: #fff;
     box-shadow: 7px 7px #000;
@@ -293,7 +292,7 @@ footer{
     margin-top: 30px;
 }
 
-.vestibularBtn{
+.vestibularBtn {
     color: #212121;
     background-color: #fff;
     box-shadow: 7px 7px #000;
@@ -308,7 +307,7 @@ footer{
 
 }
 
-.pagComercialBtn{
+.pagComercialBtn {
     color: #212121;
     background-color: #fff;
     box-shadow: 7px 7px #000;
@@ -321,35 +320,37 @@ footer{
     padding: 30px 0;
 }
 
-.vestibularWrapper{
+.vestibularWrapper {
     display: flex;
     background-color: #00000038;
     border-radius: 12px;
     padding: 20px 20px 0 20px;
     gap: 30px;
 
+    min-height: 550px;
+
     margin-top: 60px;
 }
 
-.vestTextos{
+.vestTextos {
     width: 50%;
     font-family: 'MicrobrewTwo', sans-serif;
     display: block;
     justify-content: center;
     gap: 20px;
     margin: auto;
-    
+
 }
 
-.vestTextos>h4{
+.vestTextos>h4 {
     color: #72a4ed;
     font-size: 32px;
     text-align: left;
     font-weight: 400;
-    
+
 }
 
-.vestTextos>h2{
+.vestTextos>h2 {
     color: #ffffff;
     font-size: 64px;
     font-weight: 400;
@@ -357,7 +358,7 @@ footer{
 }
 
 
-.vestTextos>div>p{
+.vestTextos>div>p {
     color: #032950;
     background-color: #77aaf5;
     border-radius: 20px;
@@ -367,37 +368,41 @@ footer{
     margin-top: 10px;
 }
 
-.p1{
+.p1 {
     margin-top: 20px;
 }
 
-.p2{
+.p2 {
     margin-top: 10px;
 }
 
-.vestTextos>h2>span:first-child{
+.vestTextos>h2>span:first-child {
     color: #f05025;
 }
 
-.vestTextos>h2>span:last-child{
+.vestTextos>h2>span:last-child {
     text-decoration: underline #f05025;
 }
 
-.modeloVestImg{
+.modeloVestImg {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: center;
+    height: 540px;
+    background-image: url(./assets/modelo-vestibular.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.modeloVestImg>img{
-    width: 100%;
-    
+.modeloVestImg>a {
+    margin-bottom: 40px;
+
 }
 
 
-.pageComercialTitle{
+.pageComercialTitle {
     font-family: 'Inter', sans-serif;
     font-size: 40px;
     text-decoration: underline #f05025;
@@ -406,7 +411,7 @@ footer{
     margin: 80px 0 40px 0;
 }
 
-.comercialWrapper{
+.comercialWrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -418,11 +423,11 @@ footer{
     gap: 30px;
 }
 
-.suaExpImg{
+.suaExpImg {
     width: 500px;
 }
 
-.tagsTitle{
+.tagsTitle {
     font-family: 'Inter', sans-serif;
     font-size: 40px;
     text-decoration: underline #f05025;
@@ -431,13 +436,14 @@ footer{
     margin: 80px 0 40px 0;
 }
 
-.tagsBtnWrapper{
+.tagsBtnWrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+
 }
 
-.tagsBtn{
+.tagsBtn {
     color: #212121;
     background-color: #fff;
     box-shadow: 7px 7px #000;
@@ -448,29 +454,38 @@ footer{
     font-weight: 700;
     max-width: 400px;
     padding: 30px 70px;
+    display: inline;
 }
 
-.tableWrapper{
+.tutorialWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+
+.tableWrapper {
     margin-top: 80px;
     flex: 1;
     overflow: auto;
-    overflow-x:visible;
+    overflow-x: visible;
 }
 
-.tableWrapper table{
+.tableWrapper table {
     font-family: 'Inter', sans-serif;
     border-collapse: collapse;
     width: 100%;
     min-width: 600px;
 }
 
-td{
+td {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
-    
+
 }
 
-td, th {
+td,
+th {
     border: 1px solid #003366;
     text-align: left;
     padding: 8px;
@@ -478,10 +493,10 @@ td, th {
 
 tr {
     background-color: #e4e4e4;
-    
+
 }
 
-.tableWrapper table tr th{
+.tableWrapper table tr th {
     background-color: #032950;
     color: #fff;
     font-family: 'Inter', sans-serif;
@@ -489,7 +504,7 @@ tr {
     font-weight: 700;
 }
 
-.tutorialTitle{
+.tutorialTitle {
     font-family: 'Inter', sans-serif;
     font-size: 40px;
     text-decoration: underline #f05025;
@@ -498,12 +513,559 @@ tr {
     margin: 80px 0 40px 0;
 }
 
-.tutorialContainerWrapper{
+.tutorialContainerWrapper {
     width: 100%;
     display: flex;
     flex-direction: row;
+    gap: 70px;
 }
 
-.containerTutorial{
+.containerTutorial {
     width: 100%;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    main {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    footer {
+        background-color: #032950;
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        display: block;
+        padding: 20px 20px;
+    }
+
+    .container {
+        margin: 0;
+        padding: 2rem;
+        font-size: 16px;
+        border: 2px solid black;
+        border-radius: 4px;
+    }
+
+    .carrosel {
+        flex: 1;
+        overflow: auto;
+        margin-right: -20px;
+    }
+
+    #modalidades {
+        background-color: #fff;
+        margin: 0 auto;
+        padding: 60px 20px;
+
+
+    }
+
+    .modalidades_content {
+        max-width: 71.25rem;
+    }
+
+    .logo-unasp {
+        display: flex;
+        padding: 20px 0;
+        background-color: #003366;
+        box-shadow: 7px 7px #000;
+        margin-bottom: 40px;
+    }
+
+    .hero {
+        background-image: url(./assets/banner-hero.webp);
+        background-size: cover;
+        height: 470px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        margin-bottom: 30px;
+    }
+
+    .hero>h2 {
+        font-family: "MicrobrewTwo";
+        font-size: 32px;
+        color: #fff;
+        font-weight: 300;
+        width: 700px;
+        text-align: center;
+    }
+
+    .hero>h2>span {
+        text-decoration: underline #f05025;
+    }
+
+    .escolha-modalidade {
+        color: #003366;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .botoes {
+        align-items: center;
+        justify-content: start;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        flex: 1;
+        overflow: auto;
+        margin-right: -20px;
+    }
+
+    .botoes div {
+        gap: 30px;
+        display: flex;
+    }
+
+    .botoes button {
+        border: 0;
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        width: 300px;
+        padding: 30px 0;
+        box-shadow: 7px 7px #000;
+    }
+
+    .modalidades button {
+        background-color: #003366;
+        color: #fff;
+
+    }
+
+    #demo {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .wrapper {
+        max-width: 71.25rem;
+        margin: 0 auto;
+    }
+
+    .vestibularTitle {
+        font-family: 'Inter', sans-serif;
+        font-size: 32px;
+        text-decoration: underline #f05025;
+        text-align: center;
+        color: #fff;
+    }
+
+    .promocionaisTitle {
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: underline #f05025;
+        margin-bottom: 50px;
+    }
+
+    .wrapper>p {
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+
+    .campus {
+        background-color: #003366;
+        width: 100%;
+        padding: 60px 0;
+    }
+
+    .campus>.wrapper {
+        padding: 0px 20px;
+    }
+
+    .logo-unasp-azul {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        box-shadow: 7px 7px #000;
+        margin-bottom: 40px;
+    }
+
+    .cardCampus {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        gap: 30px;
+        margin-right: -20px;
+    }
+
+    .cardCampus>.card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 265px;
+    }
+
+    .cardCampus>.card>img {
+        width: 100%;
+    }
+
+    .buttonCard {
+        color: #212121;
+        background-color: #fff;
+        box-shadow: 7px 7px #000;
+        border: 0;
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        width: 265px;
+        padding: 30px 0;
+    }
+
+    /*Aqui comça o estilo do Campus da Educação Básica*/
+
+    
+
+    .slideWrapper {
+        margin-bottom: 80px;
+    }
+
+    .slide {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #00000038;
+        border-radius: 12px;
+        padding: 40px 20px 0px 20px;
+        gap: 30px;
+    }
+
+    .modelo-slide-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .modelo-slide-1>img {
+        width: 100%;
+        margin-right: -10px;
+    }
+
+    .modelo-slide-1-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .modelo-slide-1-2>p {
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        width: 100%;
+    }
+
+    .orangeMarker {
+        background-color: #f05025;
+        padding: 3px;
+        font-weight: 700;
+
+    }
+
+    .slideBtn {
+        color: #212121;
+        background-color: #fff;
+        box-shadow: 7px 7px #000;
+        border: 0;
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        width: 100%;
+        padding: 30px 60px;
+        margin-top: 30px;
+    }
+
+    .vestibularBtn {
+        color: #212121;
+        background-color: #fff;
+        box-shadow: 7px 7px #000;
+        border: 0;
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        width: 100%;
+        padding: 30px 0;
+        margin-top: -500px;
+
+    }
+
+    .pagComercialBtn {
+        color: #212121;
+        background-color: #fff;
+        box-shadow: 7px 7px #000;
+        border: 0;
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .vestibularWrapper {
+        display: flex;
+        flex-direction: column;
+        background-color: #00000038;
+        border-radius: 12px;
+        padding: 40px 20px 0 20px;
+        gap: 30px;
+
+        min-height: 550px;
+
+        margin-top: 60px;
+    }
+
+    .vestTextos {
+        width: 100%;
+        font-family: 'MicrobrewTwo', sans-serif;
+        display: block;
+        justify-content: center;
+        gap: 40px 20px 0 20px;
+        margin: auto;
+
+    }
+
+    .vestTextos>h4 {
+        color: #72a4ed;
+        font-size: 26px;
+        text-align: center;
+        font-weight: 400;
+
+    }
+
+    .vestTextos>h2 {
+        color: #ffffff;
+        font-size: 54px;
+        font-weight: 400;
+        line-height: 50px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
+    .vestTextos>div>p {
+        color: #032950;
+        background-color: #77aaf5;
+        border-radius: 20px;
+        display: inline;
+        padding: 3px 5px;
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .p1 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .p2 {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .vestTextos>h2>span:first-child {
+        color: #f05025;
+    }
+
+    .vestTextos>h2>span:last-child {
+        text-decoration: underline #f05025;
+    }
+
+    .modeloVestImg {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        height: 340px;
+        background-image: url(./assets/modelo-vestibular.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .modeloVestImg>a {
+        margin-bottom: 40px;
+        width: 100%;
+
+    }
+
+
+    .pageComercialTitle {
+        font-family: 'Inter', sans-serif;
+        font-size: 32px;
+        text-decoration: underline #f05025;
+        text-align: center;
+        color: #fff;
+        margin: 80px 0 40px 0;
+    }
+
+    .comercialWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url(./assets/banner-hero.webp);
+        background-size: contain;
+        margin: auto;
+        border-radius: 12px;
+        padding: 40px 20px 40px 20px;
+        gap: 30px;
+    }
+
+    .comercialWrapper a{
+        width: 100%;
+    }
+
+    .suaExpImg {
+        width: 100%;
+    }
+
+    .tagsTitle {
+        font-family: 'Inter', sans-serif;
+        font-size: 40px;
+        text-decoration: underline #f05025;
+        text-align: center;
+        color: #fff;
+        margin: 80px 0 40px 0;
+    }
+
+    .tagsBtnWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        flex: 1;
+        overflow: auto;
+        margin-right: -20px;
+        gap: 20px;
+
+    }
+
+    .tagsBtn {
+        color: #212121;
+        background-color: #fff;
+        box-shadow: 7px 7px #000;
+        border: 0;
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        max-width: 400px;
+        padding: 30px 70px;
+        display: inline;
+    }
+
+    .tutorialWrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+
+    .tableWrapper {
+        margin-top: 80px;
+        flex: 1;
+        overflow: auto;
+        overflow-x: visible;
+        margin-right: -20px;
+    }
+
+    .tableWrapper table {
+        font-family: 'Inter', sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        min-width: 600px;
+    }
+
+    td {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+
+    }
+
+    td,
+    th {
+        border: 1px solid #003366;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr {
+        background-color: #e4e4e4;
+
+    }
+
+    .tableWrapper table tr th {
+        background-color: #032950;
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .tutorialTitle {
+        font-family: 'Inter', sans-serif;
+        font-size: 32px;
+        text-decoration: underline #f05025;
+        text-align: center;
+        color: #fff;
+        margin: 80px 0 40px 0;
+    }
+
+    .tutorialContainerWrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .containerTutorial {
+        width: 100%;
+        font-family: 'Inter', sans-serif;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .containerTutorial>iframe{
+        width: 400px;
+        height: 250px;
+    }
+
 }

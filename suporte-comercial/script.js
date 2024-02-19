@@ -41,10 +41,6 @@ const gradEc = async () => {
 }
 
 
-
-
-
-
 //Aqui começa as funcoes da ed basica
 const edBasicaSp = async () => {
     const newUrl = `${url}/teste.html`;
@@ -52,3 +48,7 @@ const edBasicaSp = async () => {
 
     demo2.innerHTML = `${response}`
 }
+
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("anoAtual").innerHTML = year;
