@@ -38,6 +38,15 @@ const mestrado = async () => {
     demo2.innerHTML = ` `
 }
 
+const cursosLivres = async () => {
+    const newUrl = `${url}/modCursosLivres.html`;
+    const response = await fetch(newUrl).then(r => r.text());
+
+    demo.innerHTML = `${response}`
+
+    demo2.innerHTML = ` `
+}
+
 
 //Aqui começa as funcoes de cada Campus
 
@@ -98,14 +107,14 @@ const edBasicaSp = async () => {
 //Aqui começa as funções do Mestrado
 
 const mestradoEc = async () => {
-    const newUrl = `${url}/teste.html`;
+    const newUrl = `${url}/mestradoEc.html`;
     const response = await fetch(newUrl).then(r => r.text());
 
     demo2.innerHTML = `${response}`
 }
 
 const mestradoSp = async () => {
-    const newUrl = `${url}/teste2.html`;
+    const newUrl = `${url}/mestradoSp.html`;
     const response = await fetch(newUrl).then(r => r.text());
 
     demo2.innerHTML = `${response}`
@@ -113,7 +122,7 @@ const mestradoSp = async () => {
 
 
 
-
+//Aqui começa as funções dos cursos Livres
 
 
 
