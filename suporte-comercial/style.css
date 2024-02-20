@@ -529,6 +529,53 @@ tr {
     text-align: center;
 }
 
+/*Aqui começa o estilo do Mestrado*/
+
+.mestradoCard{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 30px;
+}
+
+.mestradoCard>div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mestradoCard>div>img{
+    width: 100%;
+}
+
+.mestradoCard>div>button{
+    width: 100%;
+}
+
+.cardColegio{
+    display: flex;
+    gap: 30px;
+    margin: auto;
+}
+
+.cardColegio>div{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    gap: 20px;
+}
+
+.cardColegio>div>img{
+    width: 100%;
+}
+
+.cardColegio>div>button{
+    width: 100%;
+}
+
+
+
 @media only screen and (max-width: 600px) {
     * {
         margin: 0 auto;
@@ -1068,4 +1115,56 @@ tr {
         height: 250px;
     }
 
+
+    .mestradoCard{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        gap: 30px;
+        flex: 1;
+        overflow: auto;
+        margin-right: -20px;
+    }
+    
+    .mestradoCard>div{
+        min-width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .mestradoCard>div>img{
+        width: 100%;
+    }
+    
+    .mestradoCard>div>button{
+        width: 100%;
+    }
+
+
+    .cardColegio{
+        display: flex;
+        gap: 30px;
+        margin: auto;
+
+        flex: 1;
+        overflow: auto;
+        margin-right: -20px;
+    }
+    
+    .cardColegio>div{
+        display: flex;
+        flex-direction: column;
+        min-width: 90%;
+        gap: 20px;
+    }
+    
+    .cardColegio>div>img{
+        width: 100%;
+    }
+    
+    .cardColegio>div>button{
+        width: 100%;
+    }
+    
 }

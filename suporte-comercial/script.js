@@ -29,6 +29,15 @@ const educacaoBasica = async () => {
     demo2.innerHTML = ` `
 }
 
+const mestrado = async () => {
+    const newUrl = `${url}/modMestrado.html`;
+    const response = await fetch(newUrl).then(r => r.text());
+
+    demo.innerHTML = `${response}`
+
+    demo2.innerHTML = ` `
+}
+
 
 //Aqui começa as funcoes de cada Campus
 
@@ -40,14 +49,78 @@ const gradEc = async () => {
     demo2.innerHTML = `${response}`
 }
 
+const gradHt = async () => {
+    const newUrl = `${url}/pageGradHt.html`;
+    const response = await fetch(newUrl).then(r => r.text());
+
+    demo2.innerHTML = `${response}`
+}
+
+const gradSp = async () => {
+    const newUrl = `${url}/pageGradSp.html`;
+    const response = await fetch(newUrl).then(r => r.text());
+
+    demo2.innerHTML = `${response}`
+}
+
+const gradEAD = async () => {
+    const newUrl = `${url}/pageGradEAD.html`;
+    const response = await fetch(newUrl).then(r => r.text());
+
+    demo2.innerHTML = `${response}`
+}
+
+
 
 //Aqui começa as funcoes da ed basica
+const edBasicaEc = async () => {
+    const newUrl = `${url}/pageEdBasicaEc.html`;
+    const response = await fetch(newUrl).then(r => r.text());
+
+    demo2.innerHTML = `${response}`
+}
+
+const edBasicaHt = async () => {
+    const newUrl = `${url}/pageEdBasicaHt.html`;
+    const response = await fetch(newUrl).then(r => r.text());
+
+    demo2.innerHTML = `${response}`
+}
+
 const edBasicaSp = async () => {
+    const newUrl = `${url}/pageEdBasicaSp.html`;
+    const response = await fetch(newUrl).then(r => r.text());
+
+    demo2.innerHTML = `${response}`
+}
+
+
+//Aqui começa as funções do Mestrado
+
+const mestradoEc = async () => {
     const newUrl = `${url}/teste.html`;
     const response = await fetch(newUrl).then(r => r.text());
 
     demo2.innerHTML = `${response}`
 }
+
+const mestradoSp = async () => {
+    const newUrl = `${url}/teste2.html`;
+    const response = await fetch(newUrl).then(r => r.text());
+
+    demo2.innerHTML = `${response}`
+}
+
+
+
+
+
+
+
+
+
+
+
 
 const d = new Date();
 let year = d.getFullYear();
