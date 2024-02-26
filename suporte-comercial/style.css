@@ -5,6 +5,7 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 main {
@@ -22,6 +23,58 @@ footer {
     padding: 20px 0;
 }
 
+
+
+
+/* Estilo pagePos */
+.menuInterno{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 40px;
+    justify-content:space-between ;
+    box-shadow: 5px 5px 0px 5px #000;
+    margin-bottom: 40px;
+    border: 2px solid #000;
+    align-items: center;
+    background-color: #003366;
+}
+
+.titleMenuInterno{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    color: #fff;
+    width: 35%; 
+}
+
+.titleMenuInterno>h2{
+    line-height: 33px;
+    text-align: left;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+.linksMenuInterno{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.linksMenuInterno>a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.bg-branco{
+    background: #fff url(./assets/Noise\ &\ Texture.png);
+    background-size: cover;
+    padding: 80px 0;
+    width: 100%;
+}
+
 .container {
     margin: 0;
     padding: 2rem;
@@ -31,7 +84,7 @@ footer {
 }
 
 #modalidades {
-    background-color: #fff;
+    background: #fff url(./assets/Noise\ &\ Texture.png);
     margin: 0 auto;
     padding: 80px 0;
 }
@@ -44,8 +97,9 @@ footer {
     display: flex;
     padding: 20px 0;
     background-color: #003366;
-    box-shadow: 7px 7px #000;
+    box-shadow: 5px 5px 0px 5px #000;
     margin-bottom: 40px;
+    border: 2px solid #000;
 }
 
 .hero {
@@ -95,21 +149,31 @@ footer {
 }
 
 .botoes button {
-    border: 0;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     width: 300px;
     padding: 30px 0;
-    box-shadow: 7px 7px #000;
+    box-shadow: 5px 5px 0px 5px #000;
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
 }
 
-.modalidades button {
-    background-color: #003366;
+.botoes button:focus{
+    background-color: #003366cc;
+    transition: 0.5s;
     color: #fff;
-
 }
+
+.botoes button:hover{
+    background-color: #003366cc;
+    transition: 0.5s;
+    color: #fff;
+}
+
+
 
 #demo {
     display: flex;
@@ -131,7 +195,7 @@ footer {
 }
 
 .promocionaisTitle {
-    color: #fff;
+    color: #003366;
     font-family: 'Inter', sans-serif;
     font-size: 40px;
     font-weight: 700;
@@ -150,11 +214,19 @@ footer {
 }
 
 .campus {
-    background-color: #003366;
+    background: #003366 url(./assets/Noise\ &\ Texture.png);
     width: 100%;
     padding: 80px 0;
 }
 
+.campus>.wrapper>h2{
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
 .logo-unasp-azul {
     background-color: #fff;
     display: flex;
@@ -163,6 +235,10 @@ footer {
     padding: 20px 0;
     box-shadow: 7px 7px #000;
     margin-bottom: 40px;
+    font-family: 'Inter', sans-serif;
+    width: 600px;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 .cardCampus {
@@ -185,14 +261,16 @@ footer {
 .buttonCard {
     color: #212121;
     background-color: #fff;
-    box-shadow: 7px 7px #000;
+    box-shadow: 5px 5px 0px 5px #000;
     border: 0;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    width: 265px;
+    width: 100%;
     padding: 30px 0;
+    border: 2px solid #000;
+
 }
 
 /*Aqui comça o estilo do Campus da Educação Básica*/
@@ -219,7 +297,7 @@ footer {
 .cardCampusColegio>.card>button {
     color: #212121;
     background-color: #fff;
-    box-shadow: 7px 7px #000;
+    box-shadow: 5px 5px 0px 5px #000;
     border: 0;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
@@ -230,12 +308,13 @@ footer {
 }
 
 .slideWrapper {
-    margin-bottom: 80px;
+   
 }
 
 .slide {
     display: flex;
-    background-color: #00000038;
+    background: #003366 url(./assets/Noise\ &\ Texture.png);
+    background-size:auto;
     border-radius: 12px;
     padding: 20px 20px 0 20px;
     gap: 30px;
@@ -281,7 +360,7 @@ footer {
 .slideBtn {
     color: #212121;
     background-color: #fff;
-    box-shadow: 7px 7px #000;
+    box-shadow: 5px 5px 0px 5px #000;
     border: 0;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
@@ -290,6 +369,7 @@ footer {
     width: 350px;
     padding: 30px 0;
     margin-top: 30px;
+    border: 2px solid #000;
 }
 
 .vestibularBtn {
@@ -304,13 +384,14 @@ footer {
     width: 350px;
     padding: 30px 0;
     margin-top: -500px;
+    border: 2px solid #000;
 
 }
 
 .pagComercialBtn {
     color: #212121;
     background-color: #fff;
-    box-shadow: 7px 7px #000;
+    box-shadow: 5px 5px 0px 5px #000;
     border: 0;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
@@ -318,6 +399,7 @@ footer {
     font-weight: 700;
     width: 350px;
     padding: 30px 0;
+    border: 2px solid #000;
 }
 
 .vestibularWrapper {
@@ -407,7 +489,7 @@ footer {
     font-size: 40px;
     text-decoration: underline #f05025;
     text-align: center;
-    color: #fff;
+    color: #003366;
     margin: 80px 0 40px 0;
 }
 
@@ -416,7 +498,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     background-image: url(./assets/banner-hero.webp);
-    background-size: contain;
+    background-size: cover;
     margin: auto;
     border-radius: 12px;
     padding: 40px 0 40px 0px;
@@ -446,7 +528,7 @@ footer {
 .tagsBtn {
     color: #212121;
     background-color: #fff;
-    box-shadow: 7px 7px #000;
+    box-shadow: 5px 5px 0px 5px #000;
     border: 0;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
@@ -455,6 +537,7 @@ footer {
     max-width: 400px;
     padding: 30px 70px;
     display: inline;
+    border: 2px solid #000;
 }
 
 .tutorialWrapper {
@@ -509,8 +592,8 @@ tr {
     font-size: 40px;
     text-decoration: underline #f05025;
     text-align: center;
-    color: #fff;
-    margin: 80px 0 40px 0;
+    color: #003366;
+    margin: 40px 0 40px 0;
 }
 
 .tutorialContainerWrapper {
@@ -523,7 +606,7 @@ tr {
 .containerTutorial {
     width: 100%;
     font-family: 'Inter', sans-serif;
-    color: #fff;
+    color: #003366;
     font-size: 18px;
     font-weight: 400;
     text-align: center;
@@ -658,8 +741,9 @@ tr {
         display: flex;
         padding: 20px 0;
         background-color: #003366;
-        box-shadow: 7px 7px #000;
+        box-shadow: 5px 5px 0px 5px #000;
         margin-bottom: 40px;
+        border: 2px solid #000;
     }
 
     .hero {
@@ -714,20 +798,17 @@ tr {
     }
 
     .botoes button {
-        border: 0;
         cursor: pointer;
         font-family: 'Inter', sans-serif;
         font-size: 18px;
         font-weight: 500;
         width: 300px;
         padding: 30px 0;
-        box-shadow: 7px 7px #000;
-    }
-
-    .modalidades button {
-        background-color: #003366;
-        color: #fff;
-
+        box-shadow: 5px 5px 0px 5px #000;
+        border: 2px solid #000;
+        background-color: #fff;
+        color: #000;
+        font-weight: 700;
     }
 
     #demo {
@@ -739,6 +820,10 @@ tr {
     .wrapper {
         max-width: 71.25rem;
         margin: 0 auto;
+    }
+
+    .campus>.wrapper>h2{
+        font-size: 26px;
     }
 
     .vestibularTitle {
@@ -786,6 +871,11 @@ tr {
         padding: 20px 0;
         box-shadow: 7px 7px #000;
         margin-bottom: 40px;
+        font-family: 'Inter', sans-serif;
+        width: 100%;
+        font-size: 20px;
+        text-transform: uppercase;
+        border: 2px solid #000;
     }
 
     .cardCampus {
@@ -809,16 +899,17 @@ tr {
     }
 
     .buttonCard {
-        color: #212121;
-        background-color: #fff;
-        box-shadow: 7px 7px #000;
-        border: 0;
         cursor: pointer;
         font-family: 'Inter', sans-serif;
         font-size: 18px;
-        font-weight: 700;
+        font-weight: 500;
         width: 100%;
         padding: 30px 0;
+        box-shadow: 5px 5px 0px 5px #000;
+        border: 2px solid #000;
+        background-color: #fff;
+        color: #000;
+        font-weight: 700;
     }
 
     /*Aqui comça o estilo do Campus da Educação Básica*/
@@ -879,7 +970,7 @@ tr {
     .slideBtn {
         color: #212121;
         background-color: #fff;
-        box-shadow: 7px 7px #000;
+        box-shadow: 5px 5px 0px 5px #000;
         border: 0;
         cursor: pointer;
         font-family: 'Inter', sans-serif;
@@ -908,7 +999,7 @@ tr {
     .pagComercialBtn {
         color: #212121;
         background-color: #fff;
-        box-shadow: 7px 7px #000;
+        box-shadow: 5px 5px 0px 5px #000;
         border: 0;
         cursor: pointer;
         font-family: 'Inter', sans-serif;
@@ -965,7 +1056,7 @@ tr {
         border-radius: 20px;
         display: inline;
         padding: 3px 5px;
-        font-size: 18px;
+        font-size: 16px;
         margin-top: 10px;
         text-align: center;
     }
@@ -1009,11 +1100,11 @@ tr {
 
     .pageComercialTitle {
         font-family: 'Inter', sans-serif;
-        font-size: 32px;
+        font-size: 26px;
         text-decoration: underline #f05025;
         text-align: center;
-        color: #fff;
-        margin: 80px 0 40px 0;
+        color: #003366;
+        margin: 0px 0 20px 0;
     }
 
     .comercialWrapper {
@@ -1038,11 +1129,11 @@ tr {
 
     .tagsTitle {
         font-family: 'Inter', sans-serif;
-        font-size: 40px;
+        font-size: 26px;
         text-decoration: underline #f05025;
         text-align: center;
         color: #fff;
-        margin: 80px 0 40px 0;
+        margin: 0px 0 20px 0;
     }
 
     .tagsBtnWrapper {
@@ -1059,7 +1150,7 @@ tr {
     .tagsBtn {
         color: #212121;
         background-color: #fff;
-        box-shadow: 7px 7px #000;
+        box-shadow: 5px 5px 0px 5px #000;
         border: 0;
         cursor: pointer;
         font-family: 'Inter', sans-serif;
@@ -1120,31 +1211,31 @@ tr {
 
     .tutorialTitle {
         font-family: 'Inter', sans-serif;
-        font-size: 32px;
+        font-size: 26px;
         text-decoration: underline #f05025;
         text-align: center;
-        color: #fff;
-        margin: 80px 0 40px 0;
+        color: #003366;
+        margin: 0px 0 20px 0;
     }
 
     .tutorialContainerWrapper {
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 70px;
+        gap: 40px;
     }
 
     .containerTutorial {
         width: 100%;
         font-family: 'Inter', sans-serif;
-        color: #fff;
-        font-size: 18px;
+        color: #003366;
+        font-size: 16px;
         font-weight: 400;
         text-align: center;
     }
 
     .containerTutorial>iframe{
-        width: 400px;
+        width: 100;
         height: 250px;
     }
 
@@ -1226,5 +1317,73 @@ tr {
         width: 100%;
     }
     
+
+    .bg-branco{
+        padding: 50px 20px;
+    }
+
+    .menuInterno{
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        overflow: auto;
+        gap: 20px;
+        padding: 20px 20px;
+        
+    }
+
+    .titleMenuInterno{
+        min-width: 80%;
+    }
+
+    .titleMenuInterno>h2{
+        font-size: 18px;
+        text-align: left;
+        line-height: 25px;
+        
+    }
+
+    .linksMenuInterno{
+        gap: 20px;
+    }
+
+    .linksMenuInterno>a:last-child{
+        padding-right: 20px;
+    }
+
+    .bg-branco>.wrapper>.promocionaisTitle{
+        color: #003366;
+        margin-top: 50px !important;
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+
+
+    .slideWrapper>.slide{
+        background: #003366 url(./assets/Noise\ &\ Texture.png);
+    }
+
+    
+
+
+
+    .campus>.wrapper>.vestibularTitle{
+        font-size: 26px;
+        margin-bottom: 0;
+    }.campus>.wrapper>
+
+    .campus>.wrapper>.vestibularWrapper{
+        margin-top: 20px;
+    }
+
+    .campus>.wrapper>.vestTextos>h4{
+        font-size: 20px;
+    }
+
+    .campus>.wrapper>.vestTextos>h2{
+        font-size: 22px;
+    }
+
+
     
 }
