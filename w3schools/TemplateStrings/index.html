@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template Strings Menu based on array</title>
+  </head>
+  <body>
+    header com array
+    <div id="demo"></div>
+
+    <div id="Homepage">Aqui é a Home page</div>
+    <div id="Contato">Aqui é o Contato</div>
+    <div id="Loja">Aqui é a Loja</div>
+
+    <script>
+      let header = ` './assets/lampada-acesa.png' `;
+      let menuItem = ["Homepage", "Contato", "Loja"];
+
+      let html = `<img src="${header}" /> <ul>`;
+
+      for (const x of menuItem) {
+        html += `<a href="#${x}">${x}</a>`;
+      }
+
+      html += `</ul>`;
+      document.getElementById("demo").innerHTML = html;
+    </script>
+
+    <style>
+      #demo {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        color: #b81e1e;
+      }
+
+      #demo ul {
+        display: flex;
+        gap: 20px;
+      }
+
+      #demo a {
+        color: green;
+        gap: 20px;
+        display: flex;
+        text-decoration: none;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+      }
+
+      #Homepage{
+        height: 700px;
+        background-color: burlywood;
+      }
+
+      
+      #Contato{
+        height: 700px;
+        background-color: rgb(68, 223, 38);
+      }
+
+      
+      #Loja{
+        height: 700px;
+        background-color: rgb(9, 53, 197);
+      }
+    </style>
+  </body>
+</html>

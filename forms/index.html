@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms POST Rubeus</title>
+</head>
+<body>
+    <h2>Formulário Rubeus</h2>
+    <form action="https://hook.eu2.make.com/ygjwhdcoqhpln0ko1krlok0tkotlan7t" method="post" id="formRubeus">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Seu nome">
+        <label for="emailPrincipal">E-mail:</label>
+        <input type="email" name="emailPrincipal" placeholder="Seu e-mail">
+        <label for="telefonePrincipal">Telefone:</label>
+        <input type="number" name="telefonePrincipal" placeholder="Insira seu telefone">
+
+        <input type="submit" value="Enviar Form">
+    </form>
+    <script>
+        document.getElementById('formRubeus').addEventListener('submit', function(event){
+            event.preventDefault();
+
+            const formData = new FormData(event.target);
+
+            //Faz a Solicitação POST
+
+            fetch('https://hook.eu2.make.com/ygjwhdcoqhpln0ko1krlok0tkotlan7t', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Resposta do servidor:', data);
+
+                //faça algo com a resposta do servidor se necessário
+            })
+            .catch(error => {
+                console.error('Erro ao enviar solicitação:', error);
+            });
+        });
+    </script>
+</body>
+</html>
