@@ -1,44 +1,198 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms POST Rubeus</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Formulário Rubeus</h2>
-    <form action="https://hook.eu2.make.com/ygjwhdcoqhpln0ko1krlok0tkotlan7t" method="post" id="formRubeus">
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" placeholder="Seu nome">
-        <label for="emailPrincipal">E-mail:</label>
-        <input type="email" name="emailPrincipal" placeholder="Seu e-mail">
-        <label for="telefonePrincipal">Telefone:</label>
-        <input type="number" name="telefonePrincipal" placeholder="Insira seu telefone">
+    <form
+      action="https://hook.eu2.make.com/ygjwhdcoqhpln0ko1krlok0tkotlan7t"
+      method="post"
+      id="formRubeus"
+    >
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" required placeholder="Seu nome" />
+      <label for="emailPrincipal">E-mail:</label>
+      <input type="email" name="emailPrincipal" required placeholder="Seu e-mail" />
+      <label for="telefonePrincipal" >Telefone:</label>
+      <input
+        type="text"
+        name="telefonePrincipal"
+        required
+        placeholder="(XX) XXXXX-XXXX"
+        
+      />
 
-        <input type="submit" value="Enviar Form">
+      <label for="campopersonalizado_108_compl_proc">Escolha seu estado:</label>
+      <select name="campopersonalizado_108_compl_proc"  id="country">
+        <option value="">-- Selecione o Estado --</option>
+      </select>
+      <label for="campopersonalizado_110_compl_proc">Escolha sua cidade:</label>
+      <select name="campopersonalizado_110_compl_proc" id="state">
+        <option value="">-- Selecione a cidade --</option>
+      </select>
+      <label for="campopersonalizado_34_compl_proc">Selecione o Polo:</label>
+      <select name="campopersonalizado_34_compl_proc" id="city">
+        <option value="">-- Selecione o Polo --</option>
+      </select>
+
+      <input type="submit" value="Enviar Form" />
     </form>
+
     <script>
-        document.getElementById('formRubeus').addEventListener('submit', function(event){
-            event.preventDefault();
+      
 
-            const formData = new FormData(event.target);
+      var countrySateCityinfo = {
+        Acre: {
+          "Rio Branco": {
+            'UNASP Polo AC - Colégio Adventista de Rio Branco': [],
+          },
+        },
 
-            //Faz a Solicitação POST
+        Alagoas: {
+          Maceió: {
+            'UNASP Polo AL - Colégio Adventista de Maceió': [],
+          },
+        },
 
-            fetch('https://hook.eu2.make.com/ygjwhdcoqhpln0ko1krlok0tkotlan7t', {
-                method: 'POST',
-                body: formData,
+        Amapá: {
+          Macapá: {
+            'UNASP Polo AP - Colégio Adventista de Macapá': [],
+          },
+        },
+        
+        Amazonas: {
+          Manaus: {
+            'UNASP Polo AM - Colégio Adventista da Cidade Nova': [],
+            'UNASP Polo AM - Instituto Adventista de Manaus': [],
+          },
+        },
+        
+        Bahia: {
+          Fortaleza: {
+            'UNASP Polo CE - Colégio Adventista Paulo Cesar Afonso': [],
+          },
+          "Lauro de Freitas": {
+            'UNASP Polo BA - Colégio Adventista de Lauro de Freitas': [],
+          },
+          Salvador: {
+            'UNASP Polo BA - Colégio Adventista de Salvador': [],
+          },
+          "Vitória da Conquista": {
+            'UNASP Polo BA - Escola Adventista de Vitória da Conquista': [],
+          },
+        },
+        
+        "Distrito Federal": {
+          Brasília: {
+            'UNASP Polo DF - Centro Educacional Adventista do Gama': [],
+            'UNASP Polo DF - Colégio Adventista da Asa Sul': [],
+            'UNASP Polo DF - Colégio Adventista de Planaltina': [],
+          },
+        },
+        
+        "Espírito Santo": {
+          "Cachoeiro de Itapemirim": {
+            'UNASP Polo ES - Colégio Adventista de Cachoeiro de Itapemirim': [],
+          },
+          Cariacica: {
+            'UNASP Polo ES - Colégio Adventista de Cariacica': [],
+          },
+          Colatina: {
+            'UNASP Polo ES - Educandário Espírito Santense Adventista': [],
+          },
+          Vitória: {
+            'UNASP Polo ES - Colégio Adventista de Vitória': [],
+          },
+        },
+      };
+
+      window.onload = function () {
+        const selectCountry = document.getElementById("country"),
+          selectState = document.getElementById("state"),
+          selectCity = document.getElementById("city"),
+          selects = document.querySelectorAll("select");
+
+        selectState.disabled = true;
+        selectCity.disabled = true;
+
+        selects.forEach((select) => {
+          if (select.disabled == true) {
+            select.style.cursor = "auto";
+          }
+        });
+
+        for (let country in countrySateCityinfo) {
+          //console.log(country);
+          selectCountry.options[selectCountry.options.length] = new Option(
+            country,
+            country
+          );
+        }
+
+        //Country change
+        selectCountry.onchange = (e) => {
+          selectState.disabled = false;
+          selectCity.disabled = true;
+
+          selectState.length = 1;
+          selectCity.length = 1;
+
+          for (let state in countrySateCityinfo[e.target.value]) {
+            //console.log(state);
+            selectState.options[selectState.options.length] = new Option(
+              state,
+              state
+            );
+          }
+        };
+
+        //State change
+        selectState.onchange = (e) => {
+          selectCity.disabled = false;
+
+          selectCity.length = 1;
+
+          for (let city in countrySateCityinfo[selectCountry.value][
+            e.target.value
+          ]) {
+            //console.log(city);
+            selectCity.options[selectCity.options.length] = new Option(
+              city,
+              city
+            );
+          }
+        };
+      };
+
+
+
+
+      document
+        .getElementById("formRubeus")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const formData = new FormData(event.target);
+
+          //Faz a Solicitação POST
+
+          fetch("https://hook.eu2.make.com/ygjwhdcoqhpln0ko1krlok0tkotlan7t", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              console.log("Resposta do servidor:", data);
+
+              //faça algo com a resposta do servidor se necessário
             })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Resposta do servidor:', data);
-
-                //faça algo com a resposta do servidor se necessário
-            })
-            .catch(error => {
-                console.error('Erro ao enviar solicitação:', error);
+            .catch((error) => {
+              console.error("Erro ao enviar solicitação:", error);
             });
         });
     </script>
-</body>
+  </body>
 </html>
