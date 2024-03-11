@@ -1,0 +1,153 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Thunderhouse Pro';
+    src: url(./font/Thunderhouse\ Pro.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(./font/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Gotham1';
+    src: url(./font/GothamMedium.ttf);
+}
+
+h2{
+ font-family: 'Gotham1';
+ font-size: 42px;
+ font-weight: 400;
+}
+
+p{
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+body {
+    height: 100%;
+    width: 100vw;
+    padding: 80px 0;
+    background-color: #f0f0f0;
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.max-container {
+    width: 71.25rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #7a7a7a46;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 20px;
+    background-color: #fff;
+}
+
+.max-container>p{
+    width: 600px;
+    text-align: center;
+}
+
+.max-container>form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+label{
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0 10px 0 ;
+    text-align: center;
+}
+
+
+input{
+    
+    padding: 10px 20px ;
+    border-radius: 10px;
+
+}
+
+select{
+    min-width: 700px;
+    padding: 10px 20px ;
+    border-radius: 10px;
+    border: 1px solid #7a7a7a46;
+}
+
+#valorMensalidade{
+    min-width: 700px;
+    padding: 10px 20px ;
+    border-radius: 10px;
+    border: 1px solid #7a7a7a46;
+}
+
+
+.container-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 700px;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.container-row>button{
+    border: 1px solid #7a7a7a46;
+    
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+.container-row-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 700px;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.container-row-2>button{
+    border: 1px solid #7a7a7a46;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+
+.selected{
+    border: 1px solid #7a7a7a46;
+    background-color: blueviolet;
+    color: #fff;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora de gastos com educação</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+  </head>
+  <body>
+    <section class="calculadora">
+      <div class="max-container">
+        <h2>Calculadora de Gastos Escolares</h2>
+        <p>
+          Calcule o valor aproximado que irá investir na educação do seu filho
+          até o final do Ensino Médio
+        </p>
+        <form action="">
+          <label for="qualSerie"> Qual série ele está? </label>
+          <select name="serieOptions" id="serieOptions">
+            <option value="Bercário">Bercário</option>
+            <option value="Infantil: 1º ano">Infantil: 1º ano</option>
+            <option value="Infantil: 2º ano">Infantil: 2º ano</option>
+            <option value="Infantil: 3º ano">Infantil: 3º ano</option>
+            <option value="Infantil: 4º ano">Infantil: 4º ano</option>
+            <option value="Infantil: 5º ano">Infantil: 5º ano</option>
+            <option value="Fundamental I: 1º ano">Fundamental I: 1º ano</option>
+            <option value="Fundamental I: 2º ano">Fundamental I: 2º ano</option>
+            <option value="Fundamental I: 3º ano">Fundamental I: 3º ano</option>
+            <option value="Fundamental I: 4º ano">Fundamental I: 4º ano</option>
+            <option value="Fundamental I: 5º ano">Fundamental I: 5º ano</option>
+            <option value="Fundamental II: 6º ano">
+              Fundamental II: 6º ano
+            </option>
+            <option value="Fundamental II: 7º ano">
+              Fundamental II: 7º ano
+            </option>
+            <option value="Fundamental II: 8º ano">
+              Fundamental II: 8º ano
+            </option>
+            <option value="Fundamental II: 9º ano">
+              Fundamental II: 9º ano
+            </option>
+            <option value="Ensino Médio: 1º ano">Ensino Médio: 1º ano</option>
+            <option value="Ensino Médio: 2º ano">Ensino Médio: 2º ano</option>
+            <option value="Ensino Médio: 3º ano">Ensino Médio: 3º ano</option>
+          </select>
+
+          <label for="valorMensalidade">Qual o valor da mensalidade?</label>
+          <input
+            type="text"
+            name="valorMensalidade"
+            id="valorMensalidade"
+            placeholder="R$ 0.000,00"
+          />
+
+          <label for="materialEscolar"> Sobre o material escolar </label>
+          <div class="container-row-2">
+            <button  value="Está incluso na mensalidade" class="button" id="mensalidadeIncluso" >Está incluso na mensalidade</button>
+            <button  value="É pago à parte" class="button" id="mensalidadeNaoIncluso" >É pago à parte</button>
+          </div>
+
+          <label for="transporteEscolar"> Sobre o transporte escolar </label>
+          <div class="container-row">
+            <button  value="Não utilizo transporte escolar" class="button" >Não utilizo transporte escolar</button>
+            <button  value="Utilizo transporte escolar" class="button">Utilizo transporte escolar</button>
+            <button  value="É pago à parte" class="button">É pago à parte</button>
+          </div>
+
+          <label for="cursoIdiomas"> Sobre curso de idiomas </label>
+          <div class="container-row">
+            <button  value="Já está incluso na mensalidade" class="button">Já está incluso na mensalidade</button>
+            <button  value="Não quero adicionar curso de idioma" class="button">Não quero adicionar curso de idioma</button>
+            <button  value="Quero adicionar curso de idioma" class="button">Quero adicionar curso de idioma</button>
+            
+          </div>
+
+          <label for="cursoExtracurriculares">
+            Sobre curso extracurriculares
+          </label>
+          <div class="container-row">
+            <button  value="Já está incluso na mensalidade" class="button">Já está incluso na mensalidade</button>
+            <button
+              
+              value="Não quero adicionar curso extracurricular" class="button"
+            >Não quero adicionar curso extracurricular</button>
+            <button
+              
+              value="Quero adicionar curso extracurricular"
+              class="button"
+            >Quero adicionar curso extracurricular</button>
+          </div>
+          <button  value="Calcular gastos" onclick="calcularGastor()">
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
