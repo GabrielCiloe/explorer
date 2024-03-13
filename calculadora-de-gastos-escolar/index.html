@@ -20,37 +20,37 @@
         <form action="">
           <label for="qualSerie"> Qual série ele está? </label>
           <select name="serieOptions" id="serieOptions">
-            <option value="18anos">Bercário</option>
-            <option value="17anos">Infantil: 1º ano</option>
-            <option value="16anos">Infantil: 2º ano</option>
-            <option value="15anos">Infantil: 3º ano</option>
-            <option value="14anos">Infantil: 4º ano</option>
-            <option value="13anos">Infantil: 5º ano</option>
-            <option value="12anos">Fundamental I: 1º ano</option>
-            <option value="11anos">Fundamental I: 2º ano</option>
-            <option value="10anos">Fundamental I: 3º ano</option>
-            <option value="9anos">Fundamental I: 4º ano</option>
-            <option value="8anos">Fundamental I: 5º ano</option>
-            <option value="7anos">
+            <option value="18">Bercário</option>
+            <option value="17">Infantil: 1º ano</option>
+            <option value="16">Infantil: 2º ano</option>
+            <option value="15">Infantil: 3º ano</option>
+            <option value="14">Infantil: 4º ano</option>
+            <option value="13">Infantil: 5º ano</option>
+            <option value="12">Fundamental I: 1º ano</option>
+            <option value="11">Fundamental I: 2º ano</option>
+            <option value="10">Fundamental I: 3º ano</option>
+            <option value="9">Fundamental I: 4º ano</option>
+            <option value="8">Fundamental I: 5º ano</option>
+            <option value="7">
               Fundamental II: 6º ano
             </option>
-            <option value="6anos">
+            <option value="6">
               Fundamental II: 7º ano
             </option>
-            <option value="5anos">
+            <option value="5">
               Fundamental II: 8º ano
             </option>
-            <option value="4anos">
+            <option value="4">
               Fundamental II: 9º ano
             </option>
-            <option value="3anos">Ensino Médio: 1º ano</option>
-            <option value="2anos">Ensino Médio: 2º ano</option>
-            <option value="1anos">Ensino Médio: 3º ano</option>
+            <option value="3">Ensino Médio: 1º ano</option>
+            <option value="2">Ensino Médio: 2º ano</option>
+            <option value="1">Ensino Médio: 3º ano</option>
           </select>
 
           <label for="valorMensalidade">Qual o valor da mensalidade?</label>
           <input
-            type="text"
+            type="number"
             name="valorMensalidade"
             id="valorMensalidade"
             placeholder="R$ 0.000,00"
@@ -92,10 +92,13 @@
               class="button"
             >Quero adicionar curso extracurricular</button>
           </div>
-          <button  value="Calcular gastos" onclick="calcularGastor()">
+          <button  value="Calcular gastos" onclick="calcularGastos()">Calcular Gastos</button>
         </form>
       </div>
     </section>
+
+
+
     <script src="./script.js"></script>
   </body>
 </html>
