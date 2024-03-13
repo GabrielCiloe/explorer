@@ -3,7 +3,6 @@ function calcularGastos(){
     let select = document.getElementById('serieOptions');
     let qualSerie;
     let valorMensalidade = document.getElementById('valorMensalidade');
-    //alert(valorMensalidade.value)
 
     console.log( typeof valorMensalidade)
     let valorMensal = parseInt(valorMensalidade.value);
@@ -15,7 +14,7 @@ function calcularGastos(){
     
     console.log( typeof alunoSerie);
 
-    let soma = alunoSerie*valorMensal;
+    let soma = (alunoSerie * 12) * valorMensal;
     alert(soma);
 
         
