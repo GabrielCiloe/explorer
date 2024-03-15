@@ -1,10 +1,41 @@
+function materialIncluso(){
+    var matIncluso = true;
+    var matNaoIncluso = false;
+    
+    if (matIncluso === true){
+        materialInclusoBtn.classList.add('btnActive');
+        materialNaoInclusoBtn.classList.remove('btnActive');
+        alert('funcionando')
+    } else if(matNaoIncluso === true){
+        materialInclusoBtn.classList.remove('btnActive');
+        materialNaoInclusoBtn.classList.add('btnActive');
+    }
+
+}
+
+function materiaNaolIncluso(){
+    var matIncluso = false;
+    var matNaoIncluso = true;
+
+    if (matIncluso === true){
+        materialInclusoBtn.classList.add('btnActive');
+        materialNaoInclusoBtn.classList.remove('btnActive');
+    } else if(matNaoIncluso === true){
+        materialInclusoBtn.classList.remove('btnActive');
+        materialNaoInclusoBtn.classList.add('btnActive');
+    }
+}
+
+
+var materialInclusoBtn = document.getElementById('materialIncluso');
+var materialNaoInclusoBtn = document.getElementById('materialNaoIncluso');
+
 function calcularGastos(){
     
     let select = document.getElementById('serieOptions');
     let valorMensalidade = document.getElementById('valorMensalidade');
     
-    let materialIncluso = document.getElementById('materialIncluso');
-    let materialNaoIncluso = document.getElementById('materialNaoIncluso');
+    
     let qualSerie;
 
     console.log( typeof valorMensalidade);
@@ -24,11 +55,7 @@ function calcularGastos(){
     alert(soma);
 
 
-    materialIncluso = function(){
-        let materialInclusoRes = alunoSerie * 12;
-
-        alert (materialInclusoRes)
-    }
+    
     
 
 

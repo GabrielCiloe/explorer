@@ -48,74 +48,60 @@
 
           <label for="materialEscolar"> Sobre o material escolar </label>
           <div class="container-row-2">
-            <input 
-              type="radio"
-              value="Está incluso na mensalidade2"
-              class="button"
-              id="materialIncluso"
-              
-            >
+            <a class="button" id="materialIncluso" onclick="materialIncluso()">
               Está incluso na mensalidade
-            
-            <button
-              value="É pago à parte"
+            </a>
+
+            <a
               class="button"
               id="materialNaoIncluso"
-              
+              onclick="materiaNaolIncluso()"
             >
               É pago à parte
-            </button>
+            </a>
           </div>
 
           <label for="transporteEscolar"> Sobre o transporte escolar </label>
           <div class="container-row">
-            <button value="Não utilizo transporte escolar" class="button">
+            <a value="Não utilizo transporte escolar" class="button">
               Não utilizo transporte escolar
-            </button>
-            <button value="Utilizo transporte escolar" class="button">
+            </a>
+            <a value="Utilizo transporte escolar" class="button">
               Utilizo transporte escolar
-            </button>
-            <button value="É pago à parte" class="button">
-              É pago à parte
-            </button>
+            </a>
+            <a value="É pago à parte" class="button"> É pago à parte </a>
           </div>
 
           <label for="cursoIdiomas"> Sobre curso de idiomas </label>
           <div class="container-row">
-            <button value="Já está incluso na mensalidade" class="button">
+            <a value="Já está incluso na mensalidade" class="button">
               Já está incluso na mensalidade
-            </button>
-            <button value="Não quero adicionar curso de idioma" class="button">
+            </a>
+            <a value="Não quero adicionar curso de idioma" class="button">
               Não quero adicionar curso de idioma
-            </button>
-            <button value="Quero adicionar curso de idioma" class="button">
+            </a>
+            <a value="Quero adicionar curso de idioma" class="button">
               Quero adicionar curso de idioma
-            </button>
+            </a>
           </div>
 
           <label for="cursoExtracurriculares">
             Sobre curso extracurriculares
           </label>
           <div class="container-row">
-            <button value="Já está incluso na mensalidade" class="button">
+            <a value="Já está incluso na mensalidade" class="button">
               Já está incluso na mensalidade
-            </button>
-            <button
-              value="Não quero adicionar curso extracurricular"
-              class="button"
-            >
+            </a>
+            <a value="Não quero adicionar curso extracurricular" class="button">
               Não quero adicionar curso extracurricular
-            </button>
-            <button
-              value="Quero adicionar curso extracurricular"
-              class="button"
-            >
+            </a>
+            <a value="Quero adicionar curso extracurricular" class="button">
               Quero adicionar curso extracurricular
-            </button>
+            </a>
           </div>
-          <button value="Calcular gastos" onclick="calcularGastos()">
+          <a value="Calcular gastos" onclick="calcularGastos()">
             Calcular Gastos
-          </button>
+          </a>
         </form>
       </div>
     </section>

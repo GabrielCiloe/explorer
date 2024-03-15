@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora 2.0</title>
+  </head>
+  <body>
+    <form action="">
+      <h1>Calculadora de gastos escolares</h1>
+
+      <div class="container">
+        <!--Aqui começa as opções-->
+      <label>Qual serie está?</label>
+      <select name="serieOptions" id="serieOptions">
+        <option value="0">Selecione a série:</option>
+        <option value="18">Bercário</option>
+        <option value="17">Infantil: 1º ano</option>
+        <option value="16">Infantil: 2º ano</option>
+        <option value="15">Infantil: 3º ano</option>
+        <option value="14">Infantil: 4º ano</option>
+        <option value="13">Infantil: 5º ano</option>
+        <option value="12">Fundamental I: 1º ano</option>
+        <option value="11">Fundamental I: 2º ano</option>
+        <option value="10">Fundamental I: 3º ano</option>
+        <option value="9">Fundamental I: 4º ano</option>
+        <option value="8">Fundamental I: 5º ano</option>
+        <option value="7">Fundamental II: 6º ano</option>
+        <option value="6">Fundamental II: 7º ano</option>
+        <option value="5">Fundamental II: 8º ano</option>
+        <option value="4">Fundamental II: 9º ano</option>
+        <option value="3">Ensino Médio: 1º ano</option>
+        <option value="2">Ensino Médio: 2º ano</option>
+        <option value="1">Ensino Médio: 3º ano</option>
+      </select>
+
+      <!--Campo da mensalidade-->
+
+      <label for="">Qual o valor da mensalidade?</label>
+      <input
+        type="number"
+        name="valorMensalidade"
+        id="valorMensalidade"
+        placeholder="R$ 0.000,00"
+      />
+
+      <!--Inclusao do transporte escolar-->
+      <label for="">Sobre o transporte escolar</label>
+      <div class="container-row">
+        <a onclick="comTransporte()" id="comTransporte">Está incluso</a>
+        <a onclick="semTransporte()" id="semTransporte">Não está incluso</a>
+      </div>
+
+      <!--Inclusao dos materiais escolares-->
+      <label for="">Sobre o material escolar</label>
+      <div class="container-row">
+        <a onclick="comMaterial()" id="comMaterial">Está incluso</a>
+        <a onclick="semMaterial()" id="semMaterial">Não está incluso</a>
+      </div>
+
+      <!--Inclusao de curso de idiomas-->
+      <label for="">Sobre o curso de idiomas</label>
+      <div class="container-row">
+        <a onclick="comCursoIdiomas()" id="comCursoIdiomas">Está incluso</a>
+        <a onclick="semCursoIdiomas()" id="semCursoIdiomas">Não está incluso</a>
+        <a onclick="queroCursoIdiomas()" id="queroCursoIdiomas">Quero adicionar</a>
+      </div>
+
+      <!--Inclusao de curso de extracurricular-->
+      <label for="">Sobre o curso extracurricular</label>
+      <div class="container-row">
+        <a onclick="comCursoExtracurricular()" id="comCursoExtracurricular">Está incluso</a>
+        <a onclick="semCursoExtracurricular()" id="semCursoExtracurricular">Não está incluso</a>
+        <a onclick="queroCursoExtracurricular()" id="queroCursoExtracurricular">Quero adicionar</a>
+      </div>
+
+      <!--Aqui vai entrar o botão calcular os gastos escolares-->
+
+      <a onclick="calcularGastos()" class="button submit">Calcular gastos</a>
+      </div>
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

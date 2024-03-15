@@ -151,3 +151,15 @@ select{
     background-color: blueviolet;
     color: #fff;
 }
+
+
+/*
+Aqui começa o style que vai ser usado no JS
+*/
+
+.btnActive{
+    background-color: #f05025;
+    color: #f0f0f0;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
