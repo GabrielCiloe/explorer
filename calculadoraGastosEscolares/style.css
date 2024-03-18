@@ -63,7 +63,7 @@ label{
 }
 
 .active{
-    background-color: rgb(11, 201, 103) ;
+    background-color: rgb(11, 201, 103) !important;
     transition: 0.5s all;
 }
 

@@ -112,9 +112,10 @@ select{
     
 }
 
-.container-row>button{
+.container-row>.button{
     border: 1px solid #7a7a7a46;
-    
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
     align-items: center;
     justify-content: center;
@@ -134,8 +135,10 @@ select{
     
 }
 
-.container-row-2>button{
+.container-row-2>.button{
     border: 1px solid #7a7a7a46;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     padding: 20px;
     align-items: center;
@@ -160,6 +163,6 @@ Aqui começa o style que vai ser usado no JS
 .btnActive{
     background-color: #f05025;
     color: #f0f0f0;
-    font-weight: 700;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700  !important;
+    transition: 0.5s;
 }

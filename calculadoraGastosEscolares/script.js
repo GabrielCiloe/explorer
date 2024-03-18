@@ -1,3 +1,5 @@
+var comTransporteVar = true, semTransporteVar = true;
+
 var demo = document.getElementById('demo');
 var comTransporteBtn = document.getElementById('comTransporte');
 var semTransporteBtn = document.getElementById('semTransporte');
@@ -6,19 +8,31 @@ var semMaterialBtn = document.getElementById('semMaterial');
 var comCursoIdiomasBtn = document.getElementById('comCursoIdiomas');
 var semCursoIdiomasBtn = document.getElementById('semCursoIdiomas');
 var queroCursoIdiomasBtn = document.getElementById('queroCursoIdiomas');
-var comCursoExtracurricularBtn = document.getElementById('comCursoExtracurricular')
-var semCursoExtracurricularBtn = document.getElementById('semCursoExtracurricular')
-var queroCursoExtracurricularBtn = document.getElementById('queroCursoExtracurricular')
+var comCursoExtracurricularBtn = document.getElementById('comCursoExtracurricular');
+var semCursoExtracurricularBtn = document.getElementById('semCursoExtracurricular');
+var queroCursoExtracurricularBtn = document.getElementById('queroCursoExtracurricular');
 
-function comTransporte(comTransporteBtn){
-    var comTransporteBtn = true;
+var calculoTransporte;
+
+function comTransporte(){
     
-
-    if(comTransporteBtn == true){
-        alert('funcionou');
+    if(comTransporteVar == true){
         comTransporteBtn.classList.add('active');
+        semTransporteBtn.classList.remove('active');
+        calculoTransporte = 500;
     } else{
-        alert('Nao funcionou')
+        alert('Nao funcionou');
+    }
+}
+
+function semTransporte(){
+    
+    if(semTransporteVar == true){
+        comTransporteBtn.classList.remove('active');
+        semTransporteBtn.classList.add('active');
+        calculoTransporte = 0;
+    } else{
+        alert('Nao funcionou');
     }
 }
 
@@ -31,7 +45,7 @@ function calcularGastos(){
     if(opcoesSerie === 0){
         alert ('Por favor insira um valor válido na série');
     }
-    
+    valorMensalidade = (valorMensalidade*(opcoesSerie*12))+(calculoTransporte*(12*opcoesSerie));
     alert()
     console.log(valorMensalidade);
 
