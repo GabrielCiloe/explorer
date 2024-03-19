@@ -67,3 +67,15 @@ label{
     transition: 0.5s all;
 }
 
+.resultado{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    border: 1px solid #464444;
+    border-radius: 20px;
+    padding: 20px;
+}

@@ -15,10 +15,13 @@ var comCursoExtracurricularBtn = document.getElementById('comCursoExtracurricula
 var semCursoExtracurricularBtn = document.getElementById('semCursoExtracurricular');
 var queroCursoExtracurricularBtn = document.getElementById('queroCursoExtracurricular');
 
-var calculoTransporte;
-var calculoMaterial;
-var calculoCursoIdiomas;
-var calculoCursoExtracurricular;
+var calculoTransporte = 0;
+var calculoMaterial = 0;
+var calculoCursoIdiomas = 0;
+var calculoCursoExtracurricular = 0;
+var valorTotal = 0;
+
+var totalCalculoTransporte, totalCalculoMaterial, totalCalculoCursoIdiomas, totalCalculoCursoExtracurricular;
 
 /* Funções de transporte */
 function comTransporte(){
@@ -150,13 +153,56 @@ function queroCursoExtracurricular(){
 
 function calcularGastos(){
     var opcoesSerie = parseInt (document.getElementById('serieOptions').value);
-    var valorMensalidade = parseInt ( document.getElementById('valorMensalidade').value);
+    var valorMensalidade = parseFloat ( document.getElementById('valorMensalidade').value);
 
-    if(opcoesSerie === 0){
-        alert ('Por favor insira um valor válido na série');
-    }
-    valorMensalidade = (valorMensalidade*(opcoesSerie*12))+(calculoTransporte*(12*opcoesSerie));
-    alert()
-    console.log(valorMensalidade);
+    totalCalculoTransporte = calculoTransporte*(opcoesSerie*12);
+    totalCalculoMaterial = calculoMaterial*(opcoesSerie*12);
+    totalCalculoCursoIdiomas = calculoCursoIdiomas*(opcoesSerie*12);
+    totalCalculoCursoExtracurricular = calculoCursoExtracurricular*(opcoesSerie*12);
+    valorMensalidade = valorMensalidade*(opcoesSerie*12);
     
+    valorTotal = totalCalculoTransporte + totalCalculoMaterial + totalCalculoCursoIdiomas + totalCalculoCursoExtracurricular + valorMensalidade;
+    
+    console.log(totalCalculoTransporte);
+    console.log(totalCalculoMaterial);
+    console.log(totalCalculoCursoIdiomas);
+    console.log(totalCalculoCursoExtracurricular);
+    console.log(valorMensalidade);
+    console.log(valorTotal);
+
+    var geraResultado = document.getElementById('geraResultado');
+    /*
+    var testeCurrency = document.getElementById('teste');
+    testeCurrency.textContent = valorTotal.toLocaleString('pr-BR', {
+        style: "currency",
+        currency: "BRL"
+    })
+    
+    cartTotal.textContent = total.toLocaleString('pt-BR', {
+        style: "currency",
+        currency: "BRL"
+    });
+    */
+
+    geraResultado.innerHTML = "";
+    
+    if(opcoesSerie === 0 || isNaN(valorMensalidade)){
+        if(opcoesSerie === 0){
+            alert ('Por favor insira um valor válido na série');
+        }else{
+            alert ('Por favor insira um valor válido de mensalidade');
+        }
+    }else {
+        geraResultado.innerHTML = `<div class="resultado">
+        <h2>O valor do custo de transporte foi: R$${totalCalculoTransporte.toFixed(2)}</h2>
+        <h2>O valor do custo de material escolar foi: R$${totalCalculoMaterial.toFixed(2)}</h2>
+        <h2>O valor do custo de idiomas foi: R$${totalCalculoCursoIdiomas.toFixed(2)}</h2>
+        <h2>O valor do custo de cursos extracurrículares foi: R$${totalCalculoCursoExtracurricular.toFixed(2)}</h2>
+        <h2>O valor do custo da mensalidade foi: R$${valorMensalidade.toFixed(2)}</h2>
+        <h2>O valor do custo total foi: R$${valorTotal.toFixed(2)}</h2>
+        </div>`;
+    }
+
+
+
 }
