@@ -172,11 +172,8 @@ function calcularGastos(){
 
     var geraResultado = document.getElementById('geraResultado');
     /*
-    var testeCurrency = document.getElementById('teste');
-    testeCurrency.textContent = valorTotal.toLocaleString('pr-BR', {
-        style: "currency",
-        currency: "BRL"
-    })
+    var testeCurrency;
+    testeCurrency = valorTotal.toLocaleString('pr-BR',{style: "currency", currency: "BRL"});
     
     cartTotal.textContent = total.toLocaleString('pt-BR', {
         style: "currency",
@@ -194,15 +191,34 @@ function calcularGastos(){
         }
     }else {
         geraResultado.innerHTML = `<div class="resultado">
-        <h2>O valor do custo de transporte foi: R$${totalCalculoTransporte.toFixed(2)}</h2>
-        <h2>O valor do custo de material escolar foi: R$${totalCalculoMaterial.toFixed(2)}</h2>
-        <h2>O valor do custo de idiomas foi: R$${totalCalculoCursoIdiomas.toFixed(2)}</h2>
-        <h2>O valor do custo de cursos extracurrículares foi: R$${totalCalculoCursoExtracurricular.toFixed(2)}</h2>
-        <h2>O valor do custo da mensalidade foi: R$${valorMensalidade.toFixed(2)}</h2>
-        <h2>O valor do custo total foi: R$${valorTotal.toFixed(2)}</h2>
-        </div>`;
+        <h2>Custo de gastos escolares</h2>
+        <div>
+          <div>
+            <p>Valor transporte</p>
+            <p>${totalCalculoTransporte.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p></div>
+          <div>
+            <p>Valor material escolar</p>
+            <p>${totalCalculoMaterial.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p>
+          </div>
+          <div>
+            <p>Valor curso de idiomas</p>
+            <p>${totalCalculoCursoIdiomas.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>Valor curso extracurricular</p>
+            <p>${totalCalculoCursoExtracurricular.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p>
+          </div>
+          <div>
+            <p>Valor mensalidade</p>
+            <p>${valorMensalidade.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p>
+          </div>
+          <div>
+            <p>Valor total</p>
+            <p>${valorTotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p>
+          </div>
+        </div>
+      </div>`;
     }
-
-
-
 }
