@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    height: 15vh;
+    background-color: red;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.content{
+    flex-grow: 1; /*Vai crescer e preencher todo o espaço disponível*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar{
+    background-color: green;
+    width: 15vw;
+}
+
+
+.button{
+    align-self: center;
+    border: none;
+    font-size: 30px;
+    background-color: #f05025;
+    color: #FFF;
+    border-radius: 21px;
+    padding: 20px 50px;
+    cursor: pointer;
+}
+
+
+
+.footer{
+    height: 15vh;
+    background-color: blue;
+}
