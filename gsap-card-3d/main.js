@@ -43,7 +43,48 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 });
 
-document.addEventListener('click', function (){
+// document.addEventListener('click', function (){
+//     if (isAnimating) return;
+
+//     isAnimating = true;
+
+//     let slider = document.querySelector(".slider");
+//     let cards = Array.from(slider.querySelectorAll(".card"));
+//     let lastCard = cards.pop();
+//     let nextCard = cards[cards.length - 1];
+
+//     gsap.to(lastCard.querySelectorAll("h1 span"), {
+//         y:200,
+//         duration: 0.75,
+//         ease: "cubic",
+//     });
+
+//     gsap.to(lastCard, {
+//         y: "+=150%",
+//         duration: 0.75,
+//         ease: "cubic",
+//         onComplete: () => {
+//             slider.prepend(lastCard);
+//             initializeCards();
+//             gsap.set(lastCard.querySelectorAll("h1 span"), {y: -200});
+
+//             setTimeout(()=>{
+//                 isAnimating = false
+//             }, 1000)
+//         },
+//     });
+
+//     gsap.to(nextCard.querySelectorAll("h1 span"), {
+//         y: 0,
+//         duration: 1,
+//         ease: "cubic",
+//         stagger: 0.05
+//     })
+
+// });
+
+setInterval(()=>{
+    {
     if (isAnimating) return;
 
     isAnimating = true;
@@ -70,7 +111,7 @@ document.addEventListener('click', function (){
 
             setTimeout(()=>{
                 isAnimating = false
-            }, 100)
+            }, 1000)
         },
     });
 
@@ -81,4 +122,5 @@ document.addEventListener('click', function (){
         stagger: 0.05
     })
 
-});
+}
+}, 1500)
