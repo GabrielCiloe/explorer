@@ -14,7 +14,7 @@ class App {
         this._createLenis();
         this._createIntro();
         this._createHero();
-        this._createTextAnimation();
+        this._createTextAnimations();
     }
 
     _setInitialStates() {
@@ -84,7 +84,7 @@ class App {
     }
 
 
-    _createTextAnimation(){
+    _createTextAnimations(){
         const tl = gsap.timeline();
 
         this.texts.forEach((text, index) => {
