@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+}
+
+.wrapper > nav > ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+
+.wrapper > nav > ul > li > a{
+    text-decoration: none;
+}
+
+.cta{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 8px;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.cta > a{
+    text-decoration: none;
+}
+
+.cta > img{
+    width: 42px;
+}
+
+.logo{
+    text-decoration: none;
+}
+
+.nav-bg{
+    background-image: url(./assets/bg-ceu-azul.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
