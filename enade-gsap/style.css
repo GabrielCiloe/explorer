@@ -1,3 +1,12 @@
+:root {
+    --border-color: #00366C;
+    --background-color: #f1f1f1;
+    --transition: all 0.2s ease;
+}
+
+
+  
+
 *{
     margin: 0;
     padding: 0;
@@ -168,7 +177,248 @@ section{
     object-fit: contain;
 }
 
-.anotherSection{
-    height: 100vh;
-    width: 100%;
+.faq{
+    background-color: #ECECEC;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 0 0;
+    overflow: hidden;
 }
+
+.faq>.maxcontainer>h2{
+    text-align: center;
+    font-family: 'Sora';
+    color: #002D63;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.faq>.maxcontainer>div{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.faq>.maxcontainer>div>div:first-child{
+    display: flex;
+}
+
+.faq>.maxcontainer>div>div:first-child>img{
+    z-index: 1;
+}
+
+.faq>.maxcontainer>div>div:last-child{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    width: 100%;
+    z-index: 20;
+}
+
+.testmonial{
+    background-image: url(./assets/bg-testimonial.jpg);
+    background-size: cover;
+    background-position: top center;
+    margin-top: -1px;
+    padding: 80px 0;
+}
+
+
+.onda{
+    width: 100%;
+    height: 100px;
+    background: transparent;
+    background-size: cover;
+    margin-top: -80px;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.onda>img{
+    z-index: 9;
+}
+.premiacoes{
+    padding: 80px 0 0 0;
+    background: #00366C url(./assets/textura.png);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+.premiacoes>.maxcontainer>h2{
+    font-family: 'Sora';
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.premiacoes>.maxcontainer>p{
+    font-family: 'Inter';
+    width: min(700px, 90%);
+    margin: auto;
+}
+
+.premiacoes>.maxcontainer>p>strong{
+    color: #FF4E1D;
+}
+
+.PremiacoesImages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.viagem1{
+    z-index: 1;
+    margin-top: -20px;
+    object-fit: contain;
+}
+
+.viagem2{
+    z-index: 2;
+    margin-left: -100px;
+    margin-top: 70px;
+    object-fit: contain;
+}
+.viagem3{
+    z-index: 3;
+    margin-left: -100px;
+    margin-top: -10px;
+    object-fit: contain;
+}
+
+.holofote{
+    margin: auto;
+}
+
+.holofote>img{
+    width: 338px;
+    margin-top: -270px;
+    margin-right: -8px;
+}
+
+.posicoes{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    align-items: end;
+    margin: auto;
+    gap: 0px;
+    justify-content: center;
+    margin-top: -50px;
+
+}
+
+.primeiro{
+    display: flex;
+    flex-direction: column;
+}
+
+.primeiro>img:first-child{
+    width: 140px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.primeiro>img:last-child{
+    width: 250px;
+}
+
+.segundo{
+    display: flex;
+    flex-direction: column;
+}
+
+.segundo>img:first-child{
+    width: 140px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.segundo>img:last-child{
+    width: 250px;
+}
+
+.terceiro{
+    display: flex;
+    flex-direction: column;
+}
+
+.terceiro>img:first-child{
+    width: 140px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.terceiro>img:last-child{
+    width: 250px;
+}
+
+/*Acordion CSS*/
+.accordion-container {
+    width: 80%;
+    max-width: 600px;
+}
+
+.accordion-item {
+    background-color: #FFFFFF; /* White background for items */
+    border: 1px solid #E0E0E0; /* Light border */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Softer shadow */
+}
+
+.accordion-header {
+    background-color: #0557a8; /* Soft purple */
+    color: #FFFFFF; /* White text */
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px 8px 8px 8px;
+    transition: background-color 0.3s ease;
+    font-family: 'Sora';
+}
+
+.accordion-header:hover {
+    background-color: #032445; /* Darker shade of purple */
+}
+
+.accordion-content {
+    background-color: #FAFAFA; /* Very light grey for content */
+    overflow: hidden;
+    padding: 0 15px;
+    border-radius: 0 0 8px 8px;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    font-family: 'Inter';
+}
+
+.accordion-content p {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.icon {
+    transition: transform 0.3s ease;
+}
+
+.active .icon {
+    transform: rotate(45deg);
+}
+
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
